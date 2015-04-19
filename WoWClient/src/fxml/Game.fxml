@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.GameController">
+    <children>
+        <Canvas fx:id="kanfas" height="521.0" layoutX="14.0" layoutY="40.0" width="521.0" />
+        <TextArea fx:id="taJawaban" layoutX="551.0" layoutY="249.0" prefHeight="305.0" prefWidth="235.0" />
+        <TextField fx:id="tbJawab" layoutX="69.0" layoutY="566.0" onAction="#tbOnPress" prefHeight="25.0" prefWidth="621.0" />
+        <Button layoutX="701.0" layoutY="566.0" mnemonicParsing="false" onMouseClicked="#btnOnClick" prefHeight="25.0" prefWidth="85.0" text="Jawab" />
+        <Label layoutX="14.0" layoutY="14.0" text="Kategori: " />
+        <Label fx:id="lblKategori" layoutX="65.0" layoutY="14.0" text="lblKategori" />
+        <Label layoutX="235.0" layoutY="14.0" text="Sisa kata: " />
+        <Label fx:id="lblAvailable" layoutX="287.0" layoutY="14.0" text="lblAvailable" />
+        <Label layoutX="335.0" layoutY="14.0" text="Waktu: " />
+        <Label fx:id="lblWaktu" layoutX="376.0" layoutY="14.0" text="lblWaktu" />
+        <Label layoutX="435.0" layoutY="14.0" text="Score: " />
+        <Label fx:id="lblScore" layoutX="471.0" layoutY="14.0" text="lblScore" />
+        <Label fx:id="lblUser" layoutX="14.0" layoutY="570.0" text="lblUser" />
+        <Label layoutX="551.0" layoutY="14.0" text="Scoreboard" />
+        <ToggleButton fx:id="btnLv3" layoutX="763.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnLv3Click" text="3" />
+        <ToggleButton fx:id="btnLv2" layoutX="732.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnLv2Click" text="2" />
+        <ToggleButton fx:id="btnLv1" layoutX="701.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnLv1Click" text="1" />
+        <TableView fx:id="tableScore" layoutX="551.0" layoutY="40.0" prefHeight="203.0" prefWidth="235.0">
+            <columns>
+                <TableColumn fx:id="columnRank" prefWidth="43.0" text="#" />
+                <TableColumn fx:id="columnUser" prefWidth="108.0" text="User" />
+                <TableColumn fx:id="columnScore" prefWidth="59.0" text="Score" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

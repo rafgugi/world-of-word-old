@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.LoginController">
+    <children>
+        <Label layoutX="203.0" layoutY="122.0" text="Welcome to World of Word">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="203.0" layoutY="152.0" text="Server" />
+        <Label layoutX="203.0" layoutY="179.0" text="Port" />
+        <Label layoutX="203.0" layoutY="206.0" text="User" />
+        <Label fx:id="lblPass" layoutX="14.0" layoutY="18.0" text="Pass" />
+        <TextField fx:id="tbAddress" layoutX="264.0" layoutY="148.0" onAction="#login" text="127.0.0.1" />
+        <TextField fx:id="tbPort" layoutX="264.0" layoutY="175.0" onAction="#login" text="10110" />
+        <TextField fx:id="tbUser" layoutX="264.0" layoutY="202.0" onAction="#login" />
+        <PasswordField fx:id="tbPass" layoutX="75.0" layoutY="14.0" onAction="#login" />
+        <Button layoutX="355.0" layoutY="228.0" mnemonicParsing="false" onAction="#login" text="Login" />
+        <Label fx:id="lblStatus" layoutX="204.0" layoutY="250.0" text="Label">
+            <font>
+                <Font name="System Bold" size="11.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
